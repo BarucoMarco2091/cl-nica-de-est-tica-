@@ -1,0 +1,75 @@
+@import '../styles/variables.scss';
+
+header {
+    background-image: url('../assets/atikah-akhtar-6xlyKFFvufg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding: 3dvh 3dvh;
+        
+        .nav-icons {
+            gap: 3dvh;
+            color: $red;
+            
+            i {
+                font-size: 1.2rem;
+            }
+
+            i:hover {
+                color: $pink;
+            }
+        }
+
+        .logo i {
+            color: $red;
+            font-size: 1.5rem;
+        }
+
+        .logo i:hover {
+            color: $pink;
+        }
+
+        .nav-btn {
+           
+            button {
+                border: none;
+                background-color: transparent;
+                color: $red;
+            }
+
+            button:hover {
+                color: $pink;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        margin-top: 5dvh;
+        max-width: 1240px;
+        margin: auto;
+
+        div {
+            flex: 1;
+            gap: 5dvh;
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            h1 {
+                margin-top: 15dvh;
+                font-size: 3rem;
+                color: white;
+            }
+        }
+    }
+}
